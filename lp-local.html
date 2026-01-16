@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trusted personal injury attorney serving Los Angeles, Koreatown, and surrounding communities. Local expertise you can trust.">
+    <title>Trusted by Injury Victims Across Los Angeles | Local Personal Injury Attorney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fafafa;
+            color: #2d3748;
+            line-height: 1.7;
+        }
+        .header {
+            background: #ffffff;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a202c;
+        }
+        .logo-img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+        }
+        .phone-header {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .phone-header a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .hero {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 64px 24px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #1a202c;
+        }
+        .subhead {
+            font-size: 22px;
+            color: #4a5568;
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            background: #2563eb;
+            color: #ffffff;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 8px;
+        }
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+        .cta-secondary {
+            background: #ffffff;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+        .cta-secondary:hover {
+            background: #f7fafc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .section {
+            margin-bottom: 64px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1a202c;
+        }
+        .service-areas {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 48px;
+        }
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .area-item {
+            padding: 12px;
+            background: #f7fafc;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            color: #2d3748;
+        }
+        .reviews-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .google-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .google-logo {
+            max-width: 120px;
+            height: auto;
+        }
+        .rating-display {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .review-card {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 24px;
+            border-left: 4px solid #2563eb;
+        }
+        .review-stars {
+            color: #fbbf24;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .review-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #2d3748;
+        }
+        .review-author {
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+        .review-date {
+            font-size: 14px;
+            color: #718096;
+        }
+        .attorney-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .attorney-photo {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .trust-badges-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 48px;
+        }
+        .trust-badges-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        .trust-badge-img {
+            max-height: 80px;
+            width: auto;
+            opacity: 0.85;
+        }
+        .video-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 48px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 177.78%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .attorney-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a202c;
+        }
+        .attorney-title {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 24px;
+        }
+        .attorney-bio {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #2d3748;
+            margin-bottom: 16px;
+        }
+        .local-badge {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 8px 8px 8px 0;
+        }
+        .map-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 48px;
+        }
+        .map-container {
+            margin-top: 24px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+        .map-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .office-info {
+            margin-top: 24px;
+            padding: 24px;
+            background: #f7fafc;
+            border-radius: 8px;
+        }
+        .office-info h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #1a202c;
+        }
+        .office-info p {
+            margin: 8px 0;
+            color: #4a5568;
+        }
+        .form-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            background: #ffffff;
+            color: #1a202c;
+        }
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .form-radio-group {
+            display: flex;
+            gap: 24px;
+            margin-top: 8px;
+        }
+        .form-radio-group label {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .form-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .form-checkbox label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-submit {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+        .btn-submit:hover {
+            background: #1d4ed8;
+        }
+        footer {
+            background: #1a202c;
+            color: #cbd5e0;
+            padding: 48px 24px;
+            margin-top: 64px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+        .footer-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+        .footer-section p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .footer-section a {
+            color: #cbd5e0;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+        .footer-disclaimer {
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid #2d3748;
+            text-align: center;
+            font-size: 12px;
+            color: #718096;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            .attorney-section {
+                grid-template-columns: 1fr;
+            }
+            .attorney-photo {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="//cdn.callrail.com/companies/328698587/a8e768ec751936e4d680/12/swap.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/la/logo.png" alt="Insider Accident Lawyers" class="logo-img" style="filter: brightness(0);">
+            </div>
+            <div class="phone-header">
+                Call: <a href="tel:8444674335" data-callrail-phone="844-467-4335">844-467-4335</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Trusted by Injury Victims Across Los Angeles</h1>
+            <p class="subhead">A local personal injury attorney who knows your community and fights for your rights.</p>
+            <div>
+                <a href="tel:8444674335" class="cta-button" data-callrail-phone="844-467-4335">Call Now - Free Consultation</a>
+                <a href="#consultation" class="cta-button cta-secondary">Get Free Case Evaluation</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="trust-badges-section">
+                <h2 style="text-align: center; margin-bottom: 16px;">Trusted & Recognized By</h2>
+                <div class="trust-badges-row">
+                    <img src="images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-badge-img">
+                    <img src="images/la/trust-badge-2.webp" alt="Trust Badge" class="trust-badge-img">
+                    <img src="images/la/trust-badge-3.webp" alt="Trust Badge" class="trust-badge-img">
+                    <img src="images/la/avvo-rating.webp" alt="Trust Badge" class="trust-badge-img">
+                    <img src="images/la/trust-badge-4.webp" alt="Trust Badge" class="trust-badge-img">
+                </div>
+            </div>
+            <div class="service-areas">
+                <h2 style="text-align: center; margin-bottom: 16px;">Serving Los Angeles and Surrounding Communities</h2>
+                <p style="text-align: center; color: #4a5568; margin-bottom: 24px;">We're based in Koreatown and serve injury victims throughout the greater Los Angeles area.</p>
+                <div class="areas-grid">
+                    <div class="area-item">Koreatown</div>
+                    <div class="area-item">Downtown LA</div>
+                    <div class="area-item">Hollywood</div>
+                    <div class="area-item">Beverly Hills</div>
+                    <div class="area-item">West LA</div>
+                    <div class="area-item">Santa Monica</div>
+                    <div class="area-item">Pasadena</div>
+                    <div class="area-item">Glendale</div>
+                    <div class="area-item">Burbank</div>
+                    <div class="area-item">Long Beach</div>
+                    <div class="area-item">Orange County</div>
+                    <div class="area-item">Riverside County</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="reviews-section">
+                <h2 style="text-align: center; margin-bottom: 16px;">What Your Neighbors Say</h2>
+                <div class="google-badge">
+                    <img src="images/la/google-rating.png" alt="Google 5 Star Rating" style="max-width: 200px; height: auto;">
+                    <div>
+                        <div class="rating-display">4.9</div>
+                        <div style="font-size: 18px; color: #4a5568; margin-top: 8px;">Based on 50+ Google Reviews</div>
+                    </div>
+                </div>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Shawn and his team were amazing throughout my entire case. They kept me informed every step of the way and got me a great settlement. Highly recommend!"</p>
+                        <div class="review-author">Robert Chen</div>
+                        <div class="review-date">Los Angeles, CA</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Thanks Shawn you did a great job in my case, great customer service. I totally recommend this lawyers"</p>
+                        <div class="review-author">Maggie Romero</div>
+                        <div class="review-date">Koreatown, Los Angeles</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Professional, responsive, and got results. They handled everything with my insurance company and I didn't have to worry about a thing."</p>
+                        <div class="review-author">Maria Gonzalez</div>
+                        <div class="review-date">West LA, CA</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Best decision I made after my accident. The team was compassionate, knowledgeable, and fought hard for me. Couldn't be happier with the outcome."</p>
+                        <div class="review-author">James Wilson</div>
+                        <div class="review-date">Beverly Hills, CA</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"From the free consultation to case resolution, everything was handled professionally. They truly care about their clients and it shows."</p>
+                        <div class="review-author">Sarah Johnson</div>
+                        <div class="review-date">Pasadena, CA</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Self-Explanatory. Excellent and professional"</p>
+                        <div class="review-author">L'unique Malcom</div>
+                        <div class="review-date">Los Angeles, CA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="video-section">
+                <h2 style="text-align: center; margin-bottom: 16px;">Hear From Our Clients</h2>
+                <p style="text-align: center; color: #4a5568; margin-bottom: 24px;">Real stories from real people we've helped in Los Angeles</p>
+                <div class="video-grid">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/7g_u2cnZ9Ww" title="Client Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/uEUnhWujmm8" title="Client Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="attorney-section">
+                <img src="images/la/attorney-hero.webp" alt="Shawn Rokni" class="attorney-photo">
+                <div>
+                    <div class="attorney-name">Shawn Rokni</div>
+                    <div class="attorney-title">Personal Injury Attorney | Los Angeles</div>
+                    <div>
+                        <span class="local-badge">Koreatown Based</span>
+                        <span class="local-badge">12+ Years Experience</span>
+                        <span class="local-badge">Serving All of LA</span>
+                    </div>
+                    <p class="attorney-bio">I'm a personal injury attorney based right here in Koreatown, Los Angeles. I've been helping injury victims throughout the greater LA area for over 12 years.</p>
+                    <p class="attorney-bio">What makes me different? Before I represented injured people, I worked for insurance companies. I know exactly how they think, how they evaluate claims, and how they try to minimize payouts. Now I use that knowledge to help my neighbors get what they're actually owed.</p>
+                    <p class="attorney-bio">I handle car accidents, motorcycle crashes, truck wrecks, and wrongful death cases. I'm not a big corporate law firm—I'm a local attorney who understands your community and fights for your rights.</p>
+                    <p class="attorney-bio" style="margin-top: 24px;">
+                        <strong>Education:</strong><br>
+                        J.D., Chapman University School of Law<br>
+                        B.A., University of California - Los Angeles
+                    </p>
+                    <div style="margin-top: 24px; display: flex; gap: 16px; flex-wrap: wrap;">
+                        <img src="images/la/avvo-rating.webp" alt="Avvo Rating" style="max-height: 60px; object-fit: contain;">
+                        <img src="images/la/lacba.jpg" alt="LACBA" style="max-height: 60px; object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="map-section">
+                <h2>Visit Our Office</h2>
+                <p style="color: #4a5568; margin-bottom: 16px;">We're located in the heart of Koreatown, easily accessible from throughout Los Angeles.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.5!2d-118.2984953!3d34.0622656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c79c2d671bf7%3A0xfc371922d7e31902!2sInsider%20Accident%20Lawyers!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="office-info">
+                    <h3>Insider Accident Lawyers</h3>
+                    <p><strong>Location:</strong> Koreatown, Los Angeles, CA</p>
+                    <p><strong>Phone:</strong> <a href="tel:8444674335" style="color: #2563eb; text-decoration: none;" data-callrail-phone="844-467-4335">844-467-4335</a></p>
+                    <p><strong>Available:</strong> 24/7 for consultations</p>
+                    <p style="margin-top: 16px;"><a href="https://www.google.com/maps/place/Insider+Accident+Lawyers/@34.0622656,-118.3313255,13z/data=!4m6!3m5!1s0x80c2c79c2d671bf7:0xfc371922d7e31902!8m2!3d34.0622656!4d-118.2984953!16s%2Fg%2F11s7c60dhl?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-weight: 600;">View on Google Maps →</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="consultation">
+            <div class="form-section">
+                <h2 style="text-align: center; margin-bottom: 16px;">Talk to a Local Attorney Today</h2>
+                <p style="text-align: center; color: #4a5568; margin-bottom: 32px;">Get a free consultation with a Los Angeles personal injury attorney who understands your community.</p>
+                
+                <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST">
+                    <input type="hidden" name="_cc" value="john@insiderlawyers.com">
+                    <input type="hidden" name="_subject" value="New Lead - Personal Injury Case Evaluation">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label class="form-label">Are you, your victim, or are you on behalf of a friend/family member?</label>
+                        <select class="form-select" name="relationship" required>
+                            <option value="">Select an option</option>
+                            <option value="self">I was injured</option>
+                            <option value="victim">I am calling on behalf of the injured person</option>
+                            <option value="family">I am calling on behalf of a family member</option>
+                            <option value="friend">I am calling on behalf of a friend</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">What type of accident occurred?</label>
+                        <select class="form-select" name="accident_type" required>
+                            <option value="">Select an option</option>
+                            <option value="car">Car Accident</option>
+                            <option value="motorcycle">Motorcycle Accident</option>
+                            <option value="bicycle">Bicycle Accident</option>
+                            <option value="truck">Truck Accident</option>
+                            <option value="slip">Slip and Fall</option>
+                            <option value="workplace">Workplace Injury</option>
+                            <option value="wrongful_death">Wrongful Death</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Did you or the injured person receive hospital care?</label>
+                        <div class="form-radio-group">
+                            <label><input type="radio" name="hospital_care" value="yes" required> Yes</label>
+                            <label><input type="radio" name="hospital_care" value="no" required> No</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">What type of medical care was received? (Check all that apply)</label>
+                        <div class="form-checkbox-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="care_type[]" value="doctor">
+                                <label>Doctor/Emergency Visit</label>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="care_type[]" value="hospitalization">
+                                <label>Hospitalization</label>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="care_type[]" value="surgery">
+                                <label>Surgery</label>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" name="care_type[]" value="other">
+                                <label>Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">When did the accident occur?</label>
+                        <select class="form-select" name="accident_date" required>
+                            <option value="">Select an option</option>
+                            <option value="today">Today</option>
+                            <option value="this_week">This Week</option>
+                            <option value="this_month">This Month</option>
+                            <option value="1-3_months">1-3 Months Ago</option>
+                            <option value="3-6_months">3-6 Months Ago</option>
+                            <option value="6-12_months">6-12 Months Ago</option>
+                            <option value="over_12_months">Over 12 Months Ago</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">First Name *</label>
+                        <input type="text" class="form-input" name="first_name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Last Name *</label>
+                        <input type="text" class="form-input" name="last_name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-input" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-input" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="text_consent" id="text_consent">
+                            <label for="text_consent">I agree to receive text messages. Message and data rates may apply. Reply STOP to opt out.</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Talk to a Local Attorney Today</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Insider Accident Lawyers</h3>
+                <p>A local personal injury attorney serving Los Angeles, Koreatown, and surrounding communities.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Call for a Free Consultation</p>
+                <p style="font-size: 20px; font-weight: 600; margin: 8px 0;">
+                    <a href="tel:8444674335" data-callrail-phone="844-467-4335">844-467-4335</a>
+                </p>
+                <p>Available 24/7</p>
+                <p>No Fee Unless We Win</p>
+            </div>
+            <div class="footer-section">
+                <h3>Service Areas</h3>
+                <p>Koreatown</p>
+                <p>Downtown LA</p>
+                <p>Hollywood</p>
+                <p>Beverly Hills</p>
+                <p>West LA & More</p>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>This website is attorney advertising. Prior results do not guarantee a similar outcome.</p>
+            <p style="margin-top: 8px;">The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation.</p>
+        </div>
+    </footer>
+</body>
+</html>

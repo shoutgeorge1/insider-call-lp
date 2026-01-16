@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Honest advice about when you need a personal injury lawyer and when you don't.">
+    <title>You Probably Don't Trust Lawyers. That's Fair.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Crimson Text", Georgia, serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #ffffff;
+            font-size: 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .logo-img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .header-text {
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            font-weight: 600;
+            margin: 64px 0 24px;
+            color: #000;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 1.3;
+            font-weight: 600;
+            margin: 48px 0 24px;
+            color: #000;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 1.4;
+            font-weight: 600;
+            margin: 36px 0 16px;
+            color: #000;
+        }
+        p {
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        .subhead {
+            font-size: 22px;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 64px 0;
+        }
+        .section-divider {
+            height: 1px;
+            background: #e5e5e5;
+            margin: 64px 0;
+        }
+        .honest-box {
+            background: #f8f8f8;
+            border-left: 3px solid #333;
+            padding: 24px 32px;
+            margin: 32px 0;
+        }
+        .honest-box p {
+            margin-bottom: 16px;
+        }
+        .honest-box p:last-child {
+            margin-bottom: 0;
+        }
+        .attorney-intro {
+            margin: 64px 0;
+            padding: 32px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .attorney-name {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .attorney-title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+        .form-section {
+            background: #fafafa;
+            padding: 48px 32px;
+            margin: 64px 0;
+            border: 1px solid #e5e5e5;
+        }
+        .form-section h2 {
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .form-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 32px;
+        }
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-label {
+            display: block;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            background: #fff;
+        }
+        .form-radio-group {
+            display: flex;
+            gap: 24px;
+            margin-top: 8px;
+        }
+        .form-radio-group label {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .form-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .form-checkbox label {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+        }
+        .btn-submit {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 16px 32px;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 2px;
+            margin-top: 8px;
+        }
+        .btn-submit:hover {
+            background: #333;
+        }
+        .video-section {
+            margin: 64px 0;
+            padding: 32px 0;
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 177.78%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-top: 24px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .phone-link {
+            color: #000;
+            text-decoration: underline;
+            font-family: "Inter", sans-serif;
+        }
+        footer {
+            margin-top: 96px;
+            padding: 48px 0;
+            border-top: 1px solid #e5e5e5;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            .container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="//cdn.callrail.com/companies/328698587/a8e768ec751936e4d680/12/swap.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/la/logo.png" alt="Insider Accident Lawyers" class="logo-img" style="filter: brightness(0);">
+            <div class="header-text">Insider Accident Lawyers</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>You Probably Don't Trust Lawyers. That's Fair.</h1>
+        <p class="subhead">Most people shouldn't call a lawyer. Some absolutely should. Let's figure out which one you are.</p>
+
+        <div class="section">
+            <p>If you're reading this, you've probably been in an accident. And you've probably seen a lot of lawyer ads. They all say the same thing: "We'll fight for you," "Maximum compensation," "Free consultation."</p>
+            <p>Most of it is marketing noise. Let's cut through it.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="section">
+            <h2>When You Probably Don't Need a Lawyer</h2>
+            <div class="honest-box">
+                <p><strong>Minor fender bender with no injuries?</strong> You probably don't need a lawyer. Your insurance will handle it. The other driver's insurance will cover your repairs. Move on.</p>
+                <p><strong>Small property damage, no medical bills?</strong> Same answer. Insurance exists for this.</p>
+                <p><strong>You're not sure if you were hurt?</strong> Wait. See a doctor. Then decide. Don't call a lawyer just because you're confused.</p>
+            </div>
+            <p>Lawyers cost money (even on contingency, we take a percentage). If your case is worth $2,000 and you hire a lawyer, you might end up with less after fees than if you'd just handled it yourself.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="section">
+            <h2>When You Absolutely Should Call a Lawyer</h2>
+            <div class="honest-box">
+                <p><strong>You were seriously injured.</strong> Broken bones, surgery, hospital stays, ongoing treatment. This isn't about a quick settlement—it's about getting what you actually need.</p>
+                <p><strong>The insurance company is lowballing you.</strong> They offered $5,000, but your medical bills are $25,000. That's not a negotiation—that's them hoping you don't know your rights.</p>
+                <p><strong>You're missing work and losing income.</strong> Your injuries aren't just medical—they're financial. You need someone who understands how to calculate what you've actually lost.</p>
+                <p><strong>Someone else was clearly at fault.</strong> You were rear-ended. You were hit by a drunk driver. You slipped on an unmarked wet floor. The fault is obvious, but the compensation isn't.</p>
+            </div>
+            <p>In these cases, a lawyer isn't optional. It's necessary. Insurance companies have lawyers. You should too.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="section">
+            <h2>How This Actually Works</h2>
+            <p>We work on contingency. That means:</p>
+            <ul style="margin-left: 24px; margin-bottom: 24px;">
+                <li>You pay nothing upfront</li>
+                <li>We only get paid if we win your case</li>
+                <li>Our fee comes from the settlement or verdict</li>
+                <li>If we don't win, you don't pay us</li>
+            </ul>
+            <p>This isn't charity. It's alignment. We only make money if you make money. So we have a real incentive to get you the best possible outcome.</p>
+            <p>Typical contingency fees are 33-40% of the recovery. We'll be clear about our fee structure from the start. No surprises.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="attorney-intro">
+            <img src="images/la/attorney-hero.webp" alt="Shawn Rokni" style="max-width: 250px; width: 100%; border-radius: 4px; margin-bottom: 24px; display: block;">
+            <h2>About the Attorney</h2>
+            <p>My name is <strong>Shawn Rokni</strong>. I'm a personal injury attorney based in Los Angeles.</p>
+            
+            <div class="video-section">
+                <p style="text-align: center; margin-bottom: 16px; font-size: 18px;">A quick word from me</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/uEUnhWujmm8" title="Attorney Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>Before I represented injured people, I worked for insurance companies. I know how they think, how they evaluate claims, and how they try to minimize payouts.</p>
+            <p>Now I use that knowledge to help people get what they're actually owed.</p>
+            <p>I've been doing this for over 12 years. I've handled car accidents, motorcycle crashes, truck wrecks, and wrongful death cases across California.</p>
+            <p>I'm not going to promise you millions. I'm not going to tell you your case is a slam dunk. But if you have a legitimate injury case, I'll be honest with you about what it's worth and what we can do about it.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="section">
+            <h2>What Happens Next</h2>
+            <p>If you think your case might be worth pursuing, fill out the form below. I'll review it personally.</p>
+            <p>I'll tell you:</p>
+            <ul style="margin-left: 24px; margin-bottom: 24px;">
+                <li>Whether you have a case worth pursuing</li>
+                <li>What your case might be worth (realistically)</li>
+                <li>What the process looks like</li>
+                <li>Whether I'm the right lawyer for you</li>
+            </ul>
+            <p>If I don't think you need a lawyer, I'll tell you that too. No hard sell. No pressure.</p>
+            <p>If you'd rather talk, call <a href="tel:8444674335" class="phone-link" data-callrail-phone="844-467-4335">844-467-4335</a>. I'm available 24/7.</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Find Out If This Is Worth Your Time</h2>
+            <p>Answer a few questions. I'll review your case and give you an honest assessment.</p>
+            <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST">
+                <input type="hidden" name="_cc" value="john@insiderlawyers.com">
+                <input type="hidden" name="_subject" value="New Lead - Personal Injury Case Evaluation">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <label class="form-label">Are you, your victim, or are you on behalf of a friend/family member?</label>
+                    <select class="form-select" name="relationship" required>
+                        <option value="">Select an option</option>
+                        <option value="self">I was injured</option>
+                        <option value="victim">I am calling on behalf of the injured person</option>
+                        <option value="family">I am calling on behalf of a family member</option>
+                        <option value="friend">I am calling on behalf of a friend</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">What type of accident occurred?</label>
+                    <select class="form-select" name="accident_type" required>
+                        <option value="">Select an option</option>
+                        <option value="car">Car Accident</option>
+                        <option value="motorcycle">Motorcycle Accident</option>
+                        <option value="bicycle">Bicycle Accident</option>
+                        <option value="truck">Truck Accident</option>
+                        <option value="slip">Slip and Fall</option>
+                        <option value="workplace">Workplace Injury</option>
+                        <option value="wrongful_death">Wrongful Death</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Did you or the injured person receive hospital care?</label>
+                    <div class="form-radio-group">
+                        <label><input type="radio" name="hospital_care" value="yes" required> Yes</label>
+                        <label><input type="radio" name="hospital_care" value="no" required> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">What type of medical care was received? (Check all that apply)</label>
+                    <div class="form-checkbox-group">
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="care_type[]" value="doctor">
+                            <label>Doctor/Emergency Visit</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="care_type[]" value="hospitalization">
+                            <label>Hospitalization</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="care_type[]" value="surgery">
+                            <label>Surgery</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="care_type[]" value="other">
+                            <label>Other</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">When did the accident occur?</label>
+                    <select class="form-select" name="accident_date" required>
+                        <option value="">Select an option</option>
+                        <option value="today">Today</option>
+                        <option value="this_week">This Week</option>
+                        <option value="this_month">This Month</option>
+                        <option value="1-3_months">1-3 Months Ago</option>
+                        <option value="3-6_months">3-6 Months Ago</option>
+                        <option value="6-12_months">6-12 Months Ago</option>
+                        <option value="over_12_months">Over 12 Months Ago</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">First Name *</label>
+                    <input type="text" class="form-input" name="first_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Last Name *</label>
+                    <input type="text" class="form-input" name="last_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" class="form-input" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-input" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="text_consent" id="text_consent">
+                        <label for="text_consent">I agree to receive text messages. Message and data rates may apply. Reply STOP to opt out.</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit">Find Out If This Is Worth Your Time</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Insider Accident Lawyers | <a href="tel:8444674335" class="phone-link" data-callrail-phone="844-467-4335" style="color: #666;">844-467-4335</a></p>
+            <p style="margin-top: 16px; font-size: 12px;">This website is attorney advertising. Prior results do not guarantee a similar outcome.</p>
+        </div>
+    </footer>
+</body>
+</html>

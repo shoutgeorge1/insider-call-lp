@@ -462,10 +462,17 @@
 .hero-subtext {
     color: #fbba00;
     font-weight: 600;
-    max-width: 640px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+@media (min-width: 1024px) {
+    .hero-subtext {
+        text-align: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
         .hero-cta-group {
             display: flex;
@@ -959,6 +966,21 @@
             font-size: 13px;
             color: var(--brand-gray-500);
         }
+.settlement-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    margin-top: 20px;
+    padding-bottom: 6px;
+}
+.settlement-card {
+    min-width: 140px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(1,54,108,0.05);
+    font-weight: 700;
+    color: var(--brand-navy);
+}
         .reviews-section {
             background: linear-gradient(135deg, rgba(12, 35, 52, 0.03), rgba(1, 54, 108, 0.02));
         }
@@ -1167,13 +1189,13 @@
             border: 3px solid rgba(255,255,255,0.6);
         }
         @keyframes softPulse {
-            0% { transform: rotate(12deg) scale(1); box-shadow: 0 0 0 rgba(255,0,0,0.0); }
-            50% { transform: rotate(12deg) scale(1.05); box-shadow: 0 0 18px rgba(255,0,0,0.25); }
-            100% { transform: rotate(12deg) scale(1); box-shadow: 0 0 0 rgba(255,0,0,0.0); }
+            0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0.0); }
+            50% { transform: scale(1.05); box-shadow: 0 0 18px rgba(255,0,0,0.25); }
+            100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0.0); }
         }
         .stop-sign-icon {
             animation: softPulse 2.8s ease-in-out infinite;
-            transform: rotate(12deg);
+            transform: rotate(20deg);
         }
         .stop-sign span {
             transform: rotate(-45deg);
@@ -1831,6 +1853,16 @@
                     <div class="result-type">Wrongful Death</div>
                     <div class="result-meta">Results depend on the facts of each case.</div>
                 </div>
+            </div>
+            <div class="settlement-strip" aria-label="Additional settlements">
+                <div class="settlement-card">$12,000,000 – Pedestrian Accident</div>
+                <div class="settlement-card">$6,000,000 – Car Accident</div>
+                <div class="settlement-card">$2,500,000 – Wrongful Death</div>
+                <div class="settlement-card">$2,400,000 – Bicycle Accident</div>
+                <div class="settlement-card">$1,125,000 – Pedestrian Accident</div>
+                <div class="settlement-card">$1,100,000 – Personal Injury</div>
+                <div class="settlement-card">$1,000,000 – Car Accident</div>
+                <div class="settlement-card">$815,000 – Car Accident</div>
             </div>
         </div>
     </section>

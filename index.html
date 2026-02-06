@@ -304,8 +304,25 @@
         }
         .header-phone {
             font-size: 18px;
+            font-weight: 800;
+            color: #0f3a6d;
+            letter-spacing: 0.02em;
+        }
+        .sticky-header .btn-secondary {
+            background: linear-gradient(135deg, #0f3a6d, #01468a);
+            color: #ffffff;
             font-weight: 700;
-            color: var(--brand-blue);
+            padding: 12px 24px;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(1,70,138,0.25);
+            transition: all .25s ease;
+        }
+        .sticky-header .btn-secondary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 22px rgba(1,70,138,0.35);
+        }
+        .sticky-header {
+            font-family: "Poppins", "Inter", sans-serif;
         }
         @media (max-width: 968px) {
             .header-content {

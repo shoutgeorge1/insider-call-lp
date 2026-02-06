@@ -628,5 +628,19 @@
             <div class="footer-text">This website is attorney advertising. Prior results do not guarantee a similar outcome.</div>
         </div>
     </footer>
-</body>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const phoneInput=document.querySelector('input[name="phone"]');
+  if(!phoneInput) return;
+  phoneInput.addEventListener('input',function(e){
+    let v=e.target.value.replace(/\D/g,'');
+    if(v.length>=6){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6,10);
+    }else if(v.length>=3){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3);
+    }
+  });
+});
+</script></body>
 </html>
+

@@ -1662,7 +1662,7 @@
                 </div>
                 <h2 class="cta-heading" style="text-align: center;">Get a Free Car Accident Review</h2>
                 <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 32px;">Answer a few questions and we will review your case.</p>
-                <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST" id="case-evaluation-form" onsubmit="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'form_submit', 'form_name': 'case_evaluation'}); return true;}">
+                <form action="https://formsubmit.co/intake@insiderlawyers.com" method="POST" id="case-evaluation-form" onsubmit="try{dataLayer.push({'event':'form_submit','form_name':'case_evaluation'});}catch(e){}">
                     <input type="hidden" name="_cc" value="john@insiderlawyers.com">
                     <input type="hidden" name="_subject" value="New Lead - Personal Injury Case Evaluation">
                     <input type="hidden" name="_template" value="table">
@@ -1873,8 +1873,22 @@
             </div>
         </div>
     </footer>
-</body>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const phoneInput=document.querySelector('input[name="phone"]');
+  if(!phoneInput) return;
+  phoneInput.addEventListener('input',function(e){
+    let v=e.target.value.replace(/\D/g,'');
+    if(v.length>=6){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6,10);
+    }else if(v.length>=3){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3);
+    }
+  });
+});
+</script></body>
 </html>
+
 
 
 

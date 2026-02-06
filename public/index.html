@@ -1653,7 +1653,7 @@
                 </div>
                 <h2 class="cta-heading" style="text-align: center;">Get Your Free Case Evaluation in <span>2 Minutes</span></h2>
                 <p style="text-align: center; font-size: 18px; color: var(--brand-gray-700); margin-bottom: 32px;">Answer a few quick questions and an experienced personal injury attorney will review your case at no cost.</p>
-                <form action="https://formsubmit.co/georgea@insiderlawyers.com" method="POST" id="case-evaluation-form" onsubmit="if(typeof dataLayer !== 'undefined'){dataLayer.push({'event': 'form_submit', 'form_name': 'case_evaluation'}); return true;}">
+                <form action="https://formsubmit.co/ial.leads.2024@gmail.com" method="POST" id="case-evaluation-form" onsubmit="try{dataLayer.push({'event':'form_submit','form_name':'case_evaluation'});}catch(e){}">
                     <input type="hidden" name="_subject" value="New Car Accident Lead">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
@@ -1868,8 +1868,22 @@
             </div>
         </div>
     </footer>
-</body>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  const phoneInput=document.querySelector('input[name="phone"]');
+  if(!phoneInput) return;
+  phoneInput.addEventListener('input',function(e){
+    let v=e.target.value.replace(/\D/g,'');
+    if(v.length>=6){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6,10);
+    }else if(v.length>=3){
+      e.target.value='('+v.slice(0,3)+') '+v.slice(3);
+    }
+  });
+});
+</script></body>
 </html>
+
 
 
 

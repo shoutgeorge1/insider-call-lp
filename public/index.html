@@ -338,8 +338,27 @@
             }
         }
         @media (max-width: 768px) {
+            .sticky-header {
+                padding: 8px 0;
+            }
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+            }
+            .header-phone {
+                display: none;
+            }
             .header-nav {
                 display: none;
+            }
+            .header-logo {
+                max-width: 100px;
+            }
+            .sticky-header .btn-secondary {
+                padding: 10px 16px;
+                font-size: 14px;
             }
         }
         .hero {

@@ -366,6 +366,9 @@
             transform: translateY(-1px);
             box-shadow: 0 10px 22px rgba(1,70,138,0.35);
         }
+        .header-cta-mobile {
+            display: none;
+        }
         .sticky-header {
             font-family: "Poppins", "Inter", sans-serif;
         }
@@ -411,10 +414,22 @@
             .header-logo {
                 max-width: 100px;
             }
-            .sticky-header .btn-secondary {
-                padding: 14px 20px;
-                font-size: 18px;
-                font-weight: 700;
+            .header-cta-desktop {
+                display: none !important;
+            }
+            .header-cta-mobile {
+                display: inline-block !important;
+                padding: 10px 16px !important;
+                font-size: 15px !important;
+                font-weight: 700 !important;
+                background: #059669 !important;
+                color: #ffffff !important;
+                box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35) !important;
+            }
+            .header-cta-mobile:hover {
+                background: #047857 !important;
+                color: #ffffff !important;
+                box-shadow: 0 6px 16px rgba(5, 150, 105, 0.45) !important;
             }
         }
         .hero {
@@ -1581,7 +1596,8 @@
                     </nav>
                     <div class="header-phone" data-callrail-phone="844-467-4335">Speak With An Attorney: <a href="tel:844-467-4335" style="color: var(--brand-blue); text-decoration: none;">844-467-4335</a></div>
                 </div>
-                <a href="#case-evaluation" class="btn-secondary" data-callrail-phone="844-467-4335">Start My Free Review</a>
+                <a href="#case-evaluation" class="btn-secondary header-cta-desktop" data-callrail-phone="844-467-4335">Start My Free Review</a>
+                <a href="tel:844-467-4335" class="btn-secondary header-cta-mobile" data-callrail-phone="844-467-4335">Call Now</a>
             </div>
         </div>
     </header>

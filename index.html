@@ -981,11 +981,42 @@
         .trust-badge-img:hover {
             transform: scale(1.06);
         }
+        .trust-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            align-items: center;
+            justify-items: center;
+        }
+        .trust-logos img {
+            max-height: 72px;
+            width: auto;
+            height: auto !important;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+        .trust-logos img:hover {
+            transform: scale(1.06);
+        }
+        @media (max-width: 1024px) {
+            .trust-logos {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .trust-logos img {
+                max-height: 64px;
+            }
+        }
         @media (max-width: 768px) {
             .trust-badges-row {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 20px;
                 padding: 24px;
+            }
+            .trust-logos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .trust-logos img {
+                max-height: 56px;
             }
             .trust-badge-img {
                 height: 88px !important;
@@ -1813,7 +1844,7 @@
             <h2 style="text-align: center; margin-bottom: 16px;">Experienced Car Accident Attorneys in Los Angeles</h2>
             <p class="lead-text subtext-muted" style="text-align: center; margin-bottom: 24px; max-width: 760px; margin-left: auto; margin-right: auto;">Work with a car accident attorney Los Angeles drivers trust and an auto accident lawyer LA families call to protect injury claims.</p>
             <div class="trust-badges-headline">Trusted & Recognized By</div>
-            <div class="trust-badges-row">
+            <div class="trust-badges-row trust-logos">
                 <img src="images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-badge-img">
                 <img src="images/la/caala.png" alt="CAALA" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">
                 <img src="images/la/caoc.png" alt="CAOC" class="trust-badge-img" style="height: 100px; width: auto; object-fit: contain;">

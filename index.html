@@ -567,49 +567,24 @@
         .trust-bar-overlay {
             margin-top: 24px;
         }
-        .top-trust-bar {
-            background: rgba(12, 35, 52, 0.5);
-            color: var(--brand-white);
-            padding: 6px 12px;
+        .review-badges-bar {
+            padding: 10px 12px;
             text-align: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .top-trust-bar .top-trust-inner {
+        .review-badges-bar .review-badges-inner {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 24px;
+            gap: 20px;
             flex-wrap: wrap;
         }
-        .top-trust-bar .trust-bar-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 4px 10px;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .top-trust-bar .trust-bar-logo {
-            height: 20px;
+        .review-badges-bar .review-badge-img {
+            height: 32px;
             width: auto;
             object-fit: contain;
-        }
-        .top-trust-bar .trust-bar-rating {
-            flex-direction: row;
-            align-items: center;
-            gap: 4px;
-            line-height: 1;
-        }
-        .top-trust-bar .trust-bar-text {
-            font-size: 13px;
-            font-weight: 700;
-        }
-        .top-trust-bar .trust-bar-stars {
-            font-size: 11px;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
+            display: block;
         }
         @media (max-width: 768px) {
             .see-through-bar .see-through-inner {
@@ -1757,22 +1732,10 @@
             </div>
         </div>
     </header>
-    <div class="top-trust-bar">
-        <div class="top-trust-inner">
-            <div class="trust-bar-item">
-                <img src="images/la/google-rating.png" alt="Google 4.9 Rating" class="trust-bar-logo">
-                <div class="trust-bar-rating">
-                    <span class="trust-bar-text">4.9</span>
-                    <span class="trust-bar-stars">★★★★★</span>
-                </div>
-            </div>
-            <div class="trust-bar-item">
-                <img src="images/la/yelp-logo.jpg" alt="Yelp 4.8 Rating" class="trust-bar-logo">
-                <div class="trust-bar-rating">
-                    <span class="trust-bar-text">4.8</span>
-                    <span class="trust-bar-stars">★★★★★</span>
-                </div>
-            </div>
+    <div class="review-badges-bar">
+        <div class="review-badges-inner">
+            <img src="images/la/google-badge-frame.png" alt="Google Reviews" class="review-badge-img">
+            <img src="images/la/yelp-badge-reviews.png" alt="Yelp Reviews" class="review-badge-img">
         </div>
     </div>
 

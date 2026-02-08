@@ -1441,33 +1441,22 @@
             margin: 0 auto 16px;
             display: block;
             text-align: center;
-            transform: rotate(22deg) skewY(-2deg);
             transform-origin: center;
             will-change: transform;
         }
         .stop-sign img {
             width: 104px;
-            height: auto;
+            height: 104px;
             display: block;
             margin: 0 auto;
+            object-fit: cover;
             filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
-        }
-        @media (max-width: 768px) {
-            .stop-sign {
-                transform: rotate(14deg);
-            }
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
         }
         @keyframes softPulse {
-            0% { transform: rotate(22deg) skewY(-2deg) scale(1); }
-            50% { transform: rotate(22deg) skewY(-2deg) scale(1.05); }
-            100% { transform: rotate(22deg) skewY(-2deg) scale(1); }
-        }
-        @media (max-width: 768px) {
-            @keyframes softPulse {
-                0% { transform: rotate(14deg) scale(1); }
-                50% { transform: rotate(14deg) scale(1.05); }
-                100% { transform: rotate(14deg) scale(1); }
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         .stop-sign-icon {
             animation: softPulse 2.8s ease-in-out infinite;

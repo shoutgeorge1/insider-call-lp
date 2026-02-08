@@ -1023,6 +1023,45 @@
                 max-width: 160px;
             }
         }
+        .lp-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto 32px;
+            padding: 0 20px;
+        }
+        .lp-stat-item {
+            text-align: center;
+            padding: 20px 12px;
+            background: var(--brand-white);
+            border-radius: var(--card-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(1, 54, 108, 0.08);
+        }
+        .lp-stat-item .lp-stat-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--brand-blue);
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+        .lp-stat-item .lp-stat-label {
+            font-size: 0.9rem;
+            color: var(--brand-gray-700);
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .lp-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                margin-bottom: 24px;
+            }
+            .lp-stat-item .lp-stat-value {
+                font-size: 1.25rem;
+            }
+        }
         .attorney-bio-content {
             display: grid;
             grid-template-columns: 300px 1fr;
@@ -1777,7 +1816,7 @@
                         <a href="#reviews">Reviews</a>
                         <a href="#footer-contact">Contact Us</a>
                     </nav>
-                    <div class="header-phone" data-callrail-phone="844-467-4335">Speak With An Attorney: <a href="tel:844-467-4335" style="color: var(--brand-blue); text-decoration: none;">844-467-4335</a></div>
+                    <div class="header-phone" data-callrail-phone="844-467-4335">Speak With An Attorney: <a href="tel:844-467-4335" style="color: var(--brand-blue); text-decoration: none;">844-467-4335</a> <span style="font-size: 0.9em; color: var(--brand-gray-600); margin-left: 8px;">| Hablamos Español</span></div>
                 </div>
                 <a href="#case-evaluation" class="btn-secondary header-cta-desktop" data-callrail-phone="844-467-4335">Start My Free Review</a>
                 <a href="tel:844-467-4335" class="btn-secondary header-cta-mobile" data-callrail-phone="844-467-4335"><svg class="call-btn-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
@@ -1843,7 +1882,13 @@
         <div class="trust-badges-container">
             <h2 style="text-align: center; margin-bottom: 16px;">Experienced Car Accident Attorneys in Los Angeles</h2>
             <p class="lead-text subtext-muted" style="text-align: center; margin-bottom: 24px; max-width: 760px; margin-left: auto; margin-right: auto;">Work with a car accident attorney Los Angeles drivers trust and an auto accident lawyer LA families call to protect injury claims.</p>
-            <p class="lead-text" style="text-align: center; margin-bottom: 20px; font-weight: 600; color: var(--color_1);">Our firm has recovered millions for injury victims across Los Angeles County.</p>
+            <div class="lp-stats">
+                <div class="lp-stat-item"><span class="lp-stat-value">$100,000,000+</span><span class="lp-stat-label">Won for Clients</span></div>
+                <div class="lp-stat-item"><span class="lp-stat-value">5,000+ Cases</span><span class="lp-stat-label">Won for Clients</span></div>
+                <div class="lp-stat-item"><span class="lp-stat-value">120+ Years</span><span class="lp-stat-label">Experience Among Our Attorneys</span></div>
+                <div class="lp-stat-item"><span class="lp-stat-value">Harvard Law</span><span class="lp-stat-label">Certified in Valuations</span></div>
+            </div>
+            <p class="lead-text" style="text-align: center; margin-bottom: 20px; font-weight: 600; color: var(--color_1);">Former insurance attorneys who know how to get you maximum compensation.</p>
             <div class="trust-badges-headline">Trusted & Recognized By</div>
             <div class="trust-badges-row">
                 <img src="/images/la/trust-badge-1.webp" alt="Trust Badge" class="trust-badge-img" width="130" height="100" loading="lazy">
@@ -2307,7 +2352,7 @@
                     <h3>Contact Us</h3>
                     <p>Call Now for a Free Consultation</p>
                     <div class="footer-phone" data-callrail-phone="844-467-4335"><a href="tel:844-467-4335" style="color: var(--brand-white); text-decoration: none;">844-467-4335</a></div>
-                    <p>Available 24/7</p>
+                    <p>Available 24/7 · Hablamos Español</p>
                     <p style="margin-top: 8px;">No Fee Unless We Win</p>
                 </div>
                 <div class="footer-section">

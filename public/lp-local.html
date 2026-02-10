@@ -233,12 +233,7 @@
             flex-wrap: wrap;
             margin-top: 24px;
         }
-        .trust-badge-img {
-            max-height: 80px;
-            width: auto;
-            opacity: 0.85;
-        }
-        .video-section {
+                .video-section {
             background: #ffffff;
             border-radius: 12px;
             padding: 40px;
@@ -461,7 +456,12 @@
                 grid-template-columns: 1fr;
             }
         }
-    </style>
+            @media (min-width: 769px) {
+            .trust-badges-row img[src="/images/la/trust-badge-4.webp"] {
+                display: none;
+            }
+        }
+</style>
     <script type="text/javascript" src="//cdn.callrail.com/companies/328698587/a8e768ec751936e4d680/12/swap.js"></script>
 </head>
 <body>

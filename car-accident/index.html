@@ -1745,20 +1745,28 @@
             }
         }
         @media (max-width: 768px) {
+            .hero {
+                min-height: 520px;
+                background-size: cover;
+                background-position: center;
+            }
             .hero-content {
         grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
             }
     .hero-section {
-        padding-top: 12px;
-        padding-bottom: 18px;
+        padding-top: 40px;
+        padding-bottom: 48px;
     }
     .hero-text {
         display: contents;
     }
     .hero-text h1 {
         order: 1;
+        line-height: 1.25;
+        margin-bottom: 16px;
+        font-size: 32px;
     }
     .hero-content picture,
     .hero-content .hero-attorney-wrap {

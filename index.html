@@ -2261,28 +2261,30 @@
     }
   }
   /* Attorney grid sizing */
-  .our-attorneys-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 20px;
-  }
+  @media (min-width: 769px) {
+    .our-attorneys-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 20px;
+    }
 
-  .our-attorneys-card {
-    max-width: 350px;
-  }
+    .our-attorneys-card {
+      width: auto;
+      max-width: 100%;
+    }
 
-  .our-attorneys-photo-wrap {
-    width: 350px;
-    height: 350px;
-    max-width: 350px;
-  }
+    .our-attorneys-photo-wrap {
+      width: 450px;
+      height: 450px;
+      max-width: 450px;
+    }
 
-  .our-attorneys-photo-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>
+    .our-attorneys-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }</style>
     <!-- GTM injected at top of head -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

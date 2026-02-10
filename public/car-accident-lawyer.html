@@ -81,7 +81,7 @@
             box-shadow: var(--card-shadow);
             margin-bottom: 32px;
         }
-        @media (max-width: 768px) {
+        
             section {
                 padding: 48px 0;
             }
@@ -118,7 +118,7 @@
             margin-bottom: 12px;
             font-weight: 600;
         }
-        @media (max-width: 768px) {
+        
             body {
                 font-size: 16px;
                 line-height: 1.7;
@@ -313,7 +313,7 @@
                 font-size: 14px;
             }
         }
-        @media (max-width: 768px) {
+        
             .header-nav {
                 display: none;
             }
@@ -403,7 +403,7 @@
             font-weight: 600;
             letter-spacing: 0.4px;
         }
-        @media (max-width: 768px) {
+        
             .see-through-bar .see-through-inner {
                 border-radius: 16px;
             }
@@ -709,6 +709,11 @@
             transition: all 0.3s ease;
             filter: none;
         }
+        @media (min-width: 769px) {
+            .trust-badges-row img[src="/images/la/trust-badge-4.webp"] {
+                display: none;
+            }
+        }
         .trust-badge-img.pop {
             opacity: 1;
             filter: none;
@@ -721,7 +726,7 @@
         .trust-badge-img:hover {
             transform: scale(1.06);
         }
-        @media (max-width: 768px) {
+        
             .trust-badges-row {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 16px;
@@ -731,7 +736,11 @@
                 height: 60px !important;
                 max-width: 120px;
             }
-        }
+        @media (min-width: 769px) {
+            .trust-badges-row img[src="/images/la/trust-badge-4.webp"] {
+                display: none;
+            }
+        }}
         .attorney-bio-content {
             display: grid;
             grid-template-columns: 300px 1fr;
@@ -1207,7 +1216,7 @@
             color: rgba(255,255,255,0.7);
             line-height: 1.6;
         }
-        @media (max-width: 768px) {
+        
             .hero-content {
                 grid-template-columns: 1fr;
             }
